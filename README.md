@@ -54,7 +54,7 @@ No modules.
 | <a name="input_mode"></a> [mode](#input\_mode) | Mode of the file | `string` | `"0600"` | no |
 | <a name="input_owner"></a> [owner](#input\_owner) | Owner of the file | `string` | `"root"` | no |
 | <a name="input_path"></a> [path](#input\_path) | Path of the file | `string` | n/a | yes |
-| <a name="input_secontext"></a> [secontext](#input\_secontext) | The secontext for the file | <pre>object({<br>    role  = optional(string, null)<br>    type  = optional(string, null)<br>    user  = optional(string, null)<br>    level = optional(string, null)<br>  })</pre> | n/a | yes |
+| <a name="input_secontext"></a> [secontext](#input\_secontext) | The secontext for the file | <pre>object({<br>    role  = optional(string, null)<br>    type  = optional(string, null)<br>    user  = optional(string, null)<br>    level = optional(string, null)<br>  })</pre> | `{}` | no |
 
 ## Outputs
 
