@@ -48,7 +48,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_content"></a> [content](#input\_content) | File content; You can use file() or templatefile() to generate from existing local file. | `string` | n/a | yes |
-| <a name="input_external_triggers"></a> [external\_triggers](#input\_external\_triggers) | Triggers for rerunning the directory playbook except variables | `map(string)` | `{}` | no |
+| <a name="input_external_triggers"></a> [external\_triggers](#input\_external\_triggers) | Triggers for rerunning the file playbook except variables | `map(string)` | `{}` | no |
 | <a name="input_group_owner"></a> [group\_owner](#input\_group\_owner) | Group owner of the file | `string` | `null` | no |
 | <a name="input_hostname"></a> [hostname](#input\_hostname) | The hostname of linux machine the file will be created on | `string` | n/a | yes |
 | <a name="input_mode"></a> [mode](#input\_mode) | Mode of the file | `string` | `"0600"` | no |

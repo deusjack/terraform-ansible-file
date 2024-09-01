@@ -1,6 +1,6 @@
 variable "external_triggers" {
   type        = map(string)
-  description = "Triggers for rerunning the directory playbook except variables"
+  description = "Triggers for rerunning the file playbook except variables"
   default     = {}
 }
 
