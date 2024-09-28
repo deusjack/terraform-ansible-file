@@ -1,4 +1,4 @@
-# module-file
+# terraform-ansible-file
 Terraform module to create a file on Linux with Ansible
 
 > [!Warning]
@@ -8,7 +8,7 @@ Terraform module to create a file on Linux with Ansible
 
 # Terraform Docs
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -24,9 +24,9 @@ Terraform module to create a file on Linux with Ansible
 | Name | Version |
 |------|---------|
 | <a name="provider_ansible"></a> [ansible](#provider\_ansible) | 1.3.0 |
-| <a name="provider_local"></a> [local](#provider\_local) | 2.5.1 |
-| <a name="provider_null"></a> [null](#provider\_null) | 3.2.2 |
-| <a name="provider_random"></a> [random](#provider\_random) | 3.6.2 |
+| <a name="provider_local"></a> [local](#provider\_local) | 2.5.2 |
+| <a name="provider_null"></a> [null](#provider\_null) | 3.2.3 |
+| <a name="provider_random"></a> [random](#provider\_random) | 3.6.3 |
 
 ## Modules
 
@@ -69,4 +69,4 @@ No modules.
 | <a name="output_secontext"></a> [secontext](#output\_secontext) | The applied secontext for the file |
 | <a name="output_tmp_file_path"></a> [tmp\_file\_path](#output\_tmp\_file\_path) | n/a |
 | <a name="output_triggers"></a> [triggers](#output\_triggers) | Trigger for file changes to be used by other null\_resources/modules |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
