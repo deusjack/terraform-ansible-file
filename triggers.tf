@@ -24,10 +24,10 @@ resource "terraform_data" "variables" {
     path            = var.path
     mode            = var.mode
     owner           = var.owner
-    group_owner     = var.group_owner
-    secontext_role  = var.secontext.role
-    secontext_type  = var.secontext.type
-    secontext_user  = var.secontext.user
-    secontext_level = var.secontext.level
+    group_owner     = var.group_owner != null ? var.group_owner : var.owner
+    secontext_role  = var.secontext.role != null ? var.secontext.role : ""
+    secontext_type  = var.secontext.type != null ? var.secontext.type : ""
+    secontext_user  = var.secontext.user != null ? var.secontext.user : ""
+    secontext_level = var.secontext.level != null ? var.secontext.level : ""
   }))
 }
