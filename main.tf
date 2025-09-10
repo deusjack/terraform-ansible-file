@@ -26,9 +26,9 @@ resource "ansible_playbook" "file" {
   )
   lifecycle {
     replace_triggered_by = [
-      null_resource.file,
-      null_resource.external,
-      null_resource.variables
+      terraform_data.file,
+      terraform_data.external,
+      terraform_data.variables
     ]
   }
 }

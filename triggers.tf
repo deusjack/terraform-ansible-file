@@ -2,26 +2,24 @@
 # ansible files #
 #################
 
-resource "null_resource" "file" {
-  triggers = {
-    directory = filemd5("${path.module}/file.yaml")
-  }
+resource "terraform_data" "file" {
+  input = filemd5("${path.module}/file.yaml")
 }
 
 #####################
 # external triggers #
 #####################
 
-resource "null_resource" "external" {
-  triggers = var.external_triggers
+resource "terraform_data" "external" {
+  input = join(",", values(var.external_triggers))
 }
 
 #############
 # variables #
 #############
 
-resource "null_resource" "variables" {
-  triggers = {
+resource "terraform_data" "variables" {
+  input = join(",", values({
     content         = var.content
     path            = var.path
     mode            = var.mode
@@ -31,5 +29,5 @@ resource "null_resource" "variables" {
     secontext_type  = var.secontext.type
     secontext_user  = var.secontext.user
     secontext_level = var.secontext.level
-  }
+  }))
 }
