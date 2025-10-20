@@ -14,17 +14,11 @@ Terraform module to create a file on Linux with Ansible
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.8 |
-| <a name="requirement_ansible"></a> [ansible](#requirement\_ansible) | >= 1, < 2 |
-| <a name="requirement_local"></a> [local](#requirement\_local) | >= 2, < 3 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3, < 4 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_ansible"></a> [ansible](#provider\_ansible) | 1.3.0 |
-| <a name="provider_local"></a> [local](#provider\_local) | 2.5.2 |
-| <a name="provider_random"></a> [random](#provider\_random) | 3.6.3 |
 | <a name="provider_terraform"></a> [terraform](#provider\_terraform) | n/a |
 
 ## Modules
@@ -35,12 +29,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [ansible_playbook.file](https://registry.terraform.io/providers/ansible/ansible/latest/docs/resources/playbook) | resource |
-| [local_file.tmp](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file) | resource |
-| [random_uuid.tmp_file_name](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/uuid) | resource |
-| [terraform_data.external](https://registry.terraform.io/providers/hashicorp/terraform/latest/docs/resources/data) | resource |
 | [terraform_data.file](https://registry.terraform.io/providers/hashicorp/terraform/latest/docs/resources/data) | resource |
-| [terraform_data.variables](https://registry.terraform.io/providers/hashicorp/terraform/latest/docs/resources/data) | resource |
 
 ## Inputs
 
@@ -66,6 +55,5 @@ No modules.
 | <a name="output_owner"></a> [owner](#output\_owner) | Name of the owner of the file |
 | <a name="output_path"></a> [path](#output\_path) | Path of the file |
 | <a name="output_secontext"></a> [secontext](#output\_secontext) | The applied secontext for the file |
-| <a name="output_tmp_file_path"></a> [tmp\_file\_path](#output\_tmp\_file\_path) | n/a |
 | <a name="output_triggers"></a> [triggers](#output\_triggers) | Trigger for file changes to be used by other terraform\_data/modules |
 <!-- END_TF_DOCS -->
